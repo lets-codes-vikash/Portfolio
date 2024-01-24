@@ -5,10 +5,14 @@
 
 /* hero background image */
 .bgimage {
-    height: 100vh;
+    
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     background: url('https://codemyui.com/wp-content/uploads/2016/11/pure-css-snow-animation.gif');
-    background-size: cover;
-    position: relative;
 }
 
 /* text css above hero image */
@@ -142,10 +146,10 @@ html {
 .bgimage {
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
     /* Adjust styles for smaller screens here */
     #Qualification {
         padding: 30px;
@@ -159,3 +163,21 @@ html {
         padding: 70px;
     }
 }
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate__fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
